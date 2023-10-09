@@ -8,6 +8,27 @@ body {
   background: #000;
   color: #fff;
 }
+.title-page {
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 81.308px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+.container {
+  max-width: 1124px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 header {
   display: flex;
@@ -34,12 +55,12 @@ nav {
   margin-left: 10px;
 }
 .custom-container {
-  margin: 20px 40px; /* Set the outer margin */
-  padding: 10px 20px; /* Set the inner padding */
+  max-width: 1124px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
 }
-p {
-  color: white;
-}
+
 .home-section {
   margin: 50px 0;
   position: relative;
@@ -48,7 +69,7 @@ p {
 }
 .home-section p {
   font-size: 1.5rem;
-  width: 50%;
+  width: 100%;
 }
 .hero {
   display: flex;
