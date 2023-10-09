@@ -1,0 +1,59 @@
+.title-page {
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 81.308px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.portfolio-section {
+}
+
+.container {
+  max-width: 1124px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo {
+  transition: 0.3s;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.gallery:hover .photo {
+  filter: grayscale(1);
+  z-index: 1;
+}
+.gallery .photo:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  z-index: 8;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
