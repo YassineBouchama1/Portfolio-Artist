@@ -1,0 +1,80 @@
+.contact-section {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  width: 100%;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.contact-section label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.contact-section input,
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  /* min-width: 500px; */
+}
+.contact-section textarea {
+  resize: none;
+  overflow-x: hidden;
+  min-height: 150px;
+  width: 100%;
+}
+
+.contact-section .inputs::placeholder {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #bbb;
+}
+
+.contact-section .inputs :focus {
+  box-shadow: none;
+  outline: none;
+
+  border-bottom: 2px solid #ededed;
+}
+.contact-section .inputs {
+  color: white;
+  font-size: 1.5rem;
+  min-width: clamp(200px, 50vw, 500px);
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-section button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-family: Inter;
+
+  font-size: clamp(20px, 4vw, 30px);
+
+  font-style: normal;
+  font-weight: 600;
+}

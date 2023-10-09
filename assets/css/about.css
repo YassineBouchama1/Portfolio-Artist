@@ -134,11 +134,23 @@
   gap: 10px;
 }
 @media (max-width: 768px) {
-  .about-section1 {
+  .about-section {
     flex-direction: column;
     gap: 20px;
   }
   .img-about {
     flex-basis: 100%;
+  }
+  .gallery-cards {
+    flex-direction: column;
+  }
+  .cards-container2 {
+    height: auto;
+    width: 100%;
+  }
+  .card3 {
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: row;
   }
 }

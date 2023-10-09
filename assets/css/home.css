@@ -11,7 +11,8 @@ body {
 .title-page {
   color: #fff;
   font-family: Playfair Display;
-  font-size: 81.308px;
+
+  font-size: clamp(25px, 4vw, 800px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -138,7 +139,8 @@ nav {
   text-align: center;
   justify-content: center;
 }
-button {
+
+.home-section button {
   position: absolute;
   bottom: 10%;
   left: 55%;
