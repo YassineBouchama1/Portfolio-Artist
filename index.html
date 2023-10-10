@@ -7,6 +7,8 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="stylesheet" href="assets/css/home.css" />
   <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+
   <title>Document</title>
 </head>
 
@@ -22,7 +24,13 @@
         <a href="About.html">About</a>
         <a href="Contact.html">Contact</a>
       </div>
-      <div class="toggle" id="toggle">open</div>
+      <input id="toggle" class="toogle" type="checkbox"></input>
+
+      <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </label>
     </nav>
   </header>
 
@@ -44,7 +52,7 @@
       </div>
     </div>
     <div class="btn-hero">
-      <button>Mes Travaux</button>
+      <a class="btn-to-portfolio" href="Portfolio.html">Mes Travaux</a>
     </div>
   </main>
 

@@ -133,6 +133,7 @@
   padding: 10px;
   gap: 10px;
 }
+
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;

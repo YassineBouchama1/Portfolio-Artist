@@ -51,7 +51,7 @@ nav {
 
   font-family: Arial, Helvetica, sans-serif;
 
-  font-size: 20px;
+  font-size: clamp(15px, 4vw, 21px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -67,7 +67,7 @@ nav {
 }
 
 .home-section {
-  margin: 50px 0;
+  margin: 100px 0;
   position: relative;
   height: 100%;
   min-height: 100svh;
@@ -144,14 +144,14 @@ nav {
   justify-content: center;
 }
 
-.home-section button {
+.home-section .btn-to-portfolio {
   position: absolute;
   bottom: 10%;
   left: 55%;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   height: 50px;
-  padding: 5px;
+  padding: 8px 10px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -162,6 +162,10 @@ nav {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -200,16 +204,20 @@ footer {
   flex-direction: row;
   gap: 20px;
 }
-.toggle {
+
+.hamburger {
   display: none;
 }
+
 @media (max-width: 768px) {
   nav {
     position: relative;
     z-index: 999;
     transition: 0.3s all linear;
   }
-
+  .hamburger {
+    display: block;
+  }
   .links-nav {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transform: scaleY(0);
@@ -223,7 +231,7 @@ footer {
     min-height: 200px;
     padding: 20px 0;
     gap: 10px;
-    border: 1px rgb(132, 132, 132) solid;
+
     border-top: none;
     background-color: #000;
     border-bottom-left-radius: 5px;
@@ -235,9 +243,63 @@ footer {
   }
   .show {
     transform: scaleY(1);
-    opacity: 1;
+    opacity: 0.9;
   }
   .toggle {
     display: block;
+  }
+  .hero {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    height: 100%;
+    align-items: start;
+  }
+  .text-hero {
+    position: absolute;
+    text-align: center;
+    top: -10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-hero h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-right: 10px !important;
+    margin-left: 0 !important;
+  }
+
+  .img2 {
+    z-index: 5;
+    position: static !important;
+    top: 100%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* border: red 2px solid; */
+  }
+
+  .img1 {
+    position: static !important;
+    bottom: 0%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .hero img {
+    width: 90%;
+  }
+  .home-section p {
+    text-align: start;
+  }
+  .home-section .btn-to-portfolio {
+    position: static !important;
+    margin-top: 50px;
   }
 }
