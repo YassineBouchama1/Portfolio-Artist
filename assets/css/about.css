@@ -134,6 +134,13 @@
   gap: 10px;
 }
 
+.btn-history {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
