@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="shortcut icon" href="assets/imgs/favicon-32x32.png" type="image/x-icon">
 
     <title>Artistic Contact</title>
 </head>
@@ -16,7 +17,7 @@
     <header>
         <nav class="custom-container">
             <div class="logo">
-                <p>Logo</p>
+                <img src="assets/imgs/favicon-32x32.png" alt="logo Artist">
             </div>
             <div class="links-nav sisko" id="links">
                 <a href="index.html">Home</a>
@@ -41,18 +42,25 @@
 
             <form>
 
-                <label for="name">
+                <div class="input-container">
+
                     Name
+
                     <input class="inputs" type="text" placeholder="Jhon Doe" id="name">
-                </label>
-                <label for="email">
+                </div>
+                <div class="input-container">
+
+
                     Email
+
                     <input class="inputs" type="email" placeholder="jhon@email.com" id="email">
-                </label>
-                <label for="msg">
+                </div>
+                <div class="input-container msg">
+
                     Message
+
                     <textarea class="inputs" placeholder="Message" id="msg"></textarea>
-                </label>
+                </div>
                 <div class="contact-button"> <button>Submit</button></div>
             </form>
 
