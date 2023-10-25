@@ -11,7 +11,7 @@
 #toggle {
   display: none;
 }
-.hamburger p {
+.hamburger .nav {
   position: relative;
   width: 2.5em;
   height: 5px;
@@ -19,6 +19,8 @@
   background-color: #fff;
   margin-top: 8px;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  list-style: none;
 }
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
